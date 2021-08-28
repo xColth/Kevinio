@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="tr" class="no-js one-page-layout sound-effects" data-audio-tick="audio/tick.mp3" data-click-ripple-animation="yes">
+<head>
+
+<link rel="icon" href="images/home/icon1.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Kevinio - Web Developer & Designer">
+<meta name="keywords" content="Web Developer & Designer">
+<meta name="author" content="Kevinio">
+<meta name="theme-color" content="#1755cf">
+<title>Kevinio</title>
+
+<link rel="shortcut icon" href="images/ico/fav.ico">
+<link rel="apple-touch-icon" href="images/ico/fav.ico">
+
+<link rel="stylesheet" href="css/fonts/jost/jost.css">
+<link href="css.css?family=Anton" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com/">
+<link href="css2.css?family=Yanone+Kaffeesatz:wght@641&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="js/nprogress/nprogress.css">
+<link rel="stylesheet" type="text/css" href="js/jquery.magnific-popup/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="css/fonts/fontello/css/fontello.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/768.css">
+<link rel="shortcut icon" href="images/ico/fav.ico">
+
+<script src="js/jquery.js"></script>
+</head>
+<body>
+
+<div class="home-wrap">
+
+<div class="home-bg" style="background-image: url(images/home/7457.jpg)"></div>
+
+
+<div class="home-bg-logo">
+<img src="images/home/icon.png" alt="icon">
+</div>
+
+
+<nav class="home-menu">
+
+<a href="#" data-slug="projects" id="projects-link">
+<span class="item-name">Projects</span>
+</a>
+<a href="about.html" data-slug="about" id="about-link">
+<span class="item-name">About Me</span>
+</a>
+</nav>
+
+
+<div class="home-heading">
+
+<div class="home-logo">
+<p class="home-job-title">Web Designer / Developer</p>
+<p class="home-marquee">
+"The biggest risk is not taking any risk"
+Mark Zuckerberg ----------- "Every child is an artist. The whole question is how to stay an artist when he grows up."
+Pablo Picasso
+</p>
+<i class="home-logo-left "><span>Welcome to my web site</span></i>
+<i class="home-logo-center">
+<span class="home-icon">
+<img src="images/home/icon1.png" alt="icon">
+</span>
+<span class="home-text-container">
+<span class="home-text-container-placeholder">Junior Web Developer / Kevinio</span>
+</span>
+<span class="home-text">Junior Web Developer / Kevinio</span>
+</i>
+<i class="home-logo-right"><span></span></i>
+</div>
+
+</div>
+
+
+<p class="home-social">
+<a class="social-link instagram" target="_blank" href="https://www.instagram.com/_kevinio/"></a>
+<a class="social-link facebook" target="_blank" href="#"></a>
+<a class="social-link behance" target="_blank" href="#"></a>
+<a class="social-link vimeo" target="_blank" href="#"></a>
+<a class="social-link flickr" target="_blank" href="#"></a>
+
+</p>
+
+
+<p class="home-footer">Copyright &copy; Kevinio</p>
+
+
+<div class="full-screen-wrap">
+<div class="top-left"></div>
+<div class="top-left-horiz"></div>
+<div class="top-right"></div>
+<div class="top-right-horiz"></div>
+<div class="bottom-left"></div>
+<div class="bottom-left-horiz"></div>
+<div class="bottom-right"></div>
+<div class="bottom-right-horiz"></div>
+</div>
+
+
+<div class="bg-music-confirm">
+<p>Do you want me to play some cool Musıc?</p>
+<p><a id="bg-music-yes" class="bg-music-yes">Yeah pls</a> <a id="bg-music-no" class="bg-music-no">Nah thanks</a> </p>
+</div>
+
+<div id="play-music" class="play-music  autoplay">
+<div id="music-animation" class="music-animation">
+<span class="music-bar bar1"></span>
+<span class="music-bar bar2"></span>
+<span class="music-bar bar3"></span>
+<span class="music-bar bar4"></span>
+<span class="music-bar bar5"></span>
+</div>
+
+<div class="music-toggle" id="music-toggle"><a id="toggle" data-on-text="PAUSE" data-off-text="PLAY">PLAY</a></div>
+</div>
+<audio id="bg-music" loop="" src="audio/lovely.mp3"></audio>
+
+
+</div>
+
+
+<div class="one-page-content">
+<a href="index.html" class="close-page">
+<span class="close-text"></span>
+</a>
+<div class="content-wrap"></div>
+</div>
+
+
+<div class="overlay overlay-1"></div>
+<div class="overlay overlay-2"></div>
+
+
+<div class="p-overlay"></div>
+<div class="p-overlay"></div>
+
+<script src="js/tween-max.js"></script>
+<script src="js/jquery-address.js"></script>
+<script src="js/nprogress/nprogress.js"></script>
+<script src="js/jquery-isotope.js"></script>
+<script src="js/imagesloaded.js"></script>
+<script src="js/jquery-fitvids.js"></script>
+<script src="js/jquery.magnific-popup/jquery-magnific-popup.js"></script>
+<script src="js/jquery-easing.js"></script>
+<script src="js/jquery-validate.js"></script>
+<script src="js/resize-sensor.js"></script>
+<script src="js/jquery-sticky-sidebar.js"></script>
+<script src="js/main.js"></script>
+<script>
+        $('#bg-music-yes').click(function(e) {
+            e.preventDefault();
+            document.cookie = 'musicOnOff=; max-age=180;';
+            return false;
+        });
+        $('#bg-music-no').click(function(e) {
+            e.preventDefault();
+            document.cookie = 'musicOnOff=; max-age=180;';
+            return false;
+        });
+    </script>
+
+</body>
+<script>
+ $(function(){
+     $(".button-collapse").sideNav();
+ });
+ </script>
+<script>$(document).keydown(function(event){
+    if(event.keyCode==8,9,13,16,17,18,19,20,27,33,34,35,36,37,38,39,40,45,46,48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70,71,72,73,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,96,97,98,99,100,101,102,103,14,105,106,107,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,144,145,189,187,188,189,190,191,192,219,220,221,222){
+        return false;
+    }
+    else if (event.ctrlKey && event.shiftKey && event.keyCode==73){
+             return false;
+    }
+});
+
+$(document).on("contextmenu",function(e){
+   e.preventDefault();
+});
+
+$(document).on("contextmenu",function(e){
+   e.preventDefault();
+});
+</script>
+<script language="javascript">
+			document.onmousedown=disableclick;
+		function disableclick(event)
+		{
+			if(event.button==2)
+			{
+				alert("Contact me on Discord : 3nv0y#3695");
+			return false;
+			}
+		}
+		</script>
+<div class="hiddendiv common"></div>
+
+</html>

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/yanonekaffeesatz/v16/3y9I6aknfjLm_3lMKjiMgmUUYBs04aUXNxt9gW2LIftoKNKpcA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/yanonekaffeesatz/v16/3y9I6aknfjLm_3lMKjiMgmUUYBs04aUXNxt9gW2LIftoEdKpcA.ttf) format('truetype');
+}
